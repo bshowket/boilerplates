@@ -2,6 +2,7 @@
 - name: install zsh
   hosts: all
   become: yes
+  become_method: su
   tasks:
     - name: install zsh
       apt:
